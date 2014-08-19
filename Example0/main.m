@@ -19,11 +19,14 @@ int main(int argc, const char * argv[])
         printf("%s\n", "Have fun with your first Objective-C program!");
         
         int n1, n2;
-        printf("Enter two integers \ns");
+        printf("Enter two integers: ");
         scanf("%d %d", &n1, &n2);
         
         int sum = n1 + n2;
         NSLog(@"%d + %d = %d", n1, n2, sum);
+        NSLog(@"%d + %d = %x", n1, n2, sum);
+        
+        NSLog(@"%@", @"Thank you for using this program");
         
     }
     return 0;
