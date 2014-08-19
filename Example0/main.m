@@ -16,6 +16,8 @@ int main(int argc, const char * argv[])
         // insert code here...
         NSLog(@"Hello, World!");
         
+        printf("%s\n", "Have fun with your first Objective-C program!");
+        
     }
     return 0;
 }
