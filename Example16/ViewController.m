@@ -26,7 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [self loadData];
+}
+
 - (IBAction)addNewRecord:(id)sender {
     [self performSegueWithIdentifier:@"idSegueToEditor" sender:self];
+}
+
+- (void) loadData {
+    NSString *query = @"SELECT * FROM peopleInfo;";
+    
+    if(self.peopleInfo != nil){
+        self.peopleInfo = nil;
+    }
+    
+    self.peopleInfo = [[NSArray alloc] initWithArray: [self.dbManager loadDataFromDB: query]];
+    
+    [self.tablePeople reloadData];
 }
 @end

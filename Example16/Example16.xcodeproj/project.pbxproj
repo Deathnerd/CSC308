@@ -398,7 +398,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example16/Example16-Prefix.pch";
-				INFOPLIST_FILE = "Example16/Example16-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example16-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,7 +411,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example16/Example16-Prefix.pch";
-				INFOPLIST_FILE = "Example16/Example16-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example16-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -476,6 +476,7 @@
 				3F2C15CA1A2E1AA600752B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F2C15CB1A2E1AA600752B50 /* Build configuration list for PBXNativeTarget "Example16Tests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				3F2C15CD1A2E1AA600752B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

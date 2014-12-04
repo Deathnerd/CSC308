@@ -26,7 +26,7 @@
     self = [super init];
     
     if(self){
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentsDirectory, NSUserDomainMask, YES);
         self.documentsDirectory = [paths objectAtIndex: 0];
         
         self.databaseFilename = dbFilename;
